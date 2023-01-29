@@ -1,0 +1,39 @@
+.navbar {
+	@extend #navDef;
+	border: 1px solid rgb(224, 224, 224);
+	background-color: $brand_nav-light;
+
+	&_left {
+		display: flex;
+		&_img {  
+			object-fit: cover;
+			@include size(33px, 30px);
+			margin-right: 5px; 
+		} 
+		color: $brand_primary-light; 
+	}
+	&_right {
+		align-items: center;
+		display: flex;
+		.btnToggle {
+			border: none;
+			padding: 10px;
+			background-color: $brand_nav-dark;
+			border-radius: 50%;
+		}
+		.btnL { @extend #btn; opacity: 0.4; cursor: not-allowed; }
+		.btnD { @extend #btn; }
+	}
+}
+
+#dark .navbar {
+	background-color: $brand_nav-dark;
+	border: 1px solid $brand_nav-dark;
+
+	&_right {
+		.btnToggle { background-color: rgb(248, 248, 248); }
+		.btnL { color: white; opacity: 1; cursor: pointer;}
+		.btnD { color: white; opacity: 0.4; cursor: not-allowed;}
+	}
+}
+

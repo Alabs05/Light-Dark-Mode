@@ -1,0 +1,19 @@
+.home {
+	width: 500px;
+	border: 1px solid rgb(224, 224, 224);
+	padding: 30px;
+	color: black;
+	background-color: $brand_home-light;
+
+	ul { padding-left: 20px;}
+	li::marker {
+		color: $brand_primary-light;
+		font-size: 1.5rem;
+	}
+}
+
+#dark .home {
+	background-color: $brand_home-dark;
+	border: 1px solid $brand_home-dark;
+	color: white;
+}

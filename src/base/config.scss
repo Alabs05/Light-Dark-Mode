@@ -1,0 +1,20 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+#navDef {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	padding: 20px;
+	border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+#btn {
+	border: none;
+	margin: 0 5px;
+	cursor: pointer;
+	background-color: transparent;
+}
+
